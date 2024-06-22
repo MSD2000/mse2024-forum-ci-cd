@@ -3,8 +3,8 @@
 COMPOSE_FILE="./docker-compose.yml"
 
 declare -A services
-services["frontend"]="msd2000/mse2024-forum-be"
-services["backend"]="ivorusev/mse2024-forum-be"
+services["frontend"]="msd2000/mse2024-forum-fe"
+services["backend"]="msd2000/mse2024-forum-be"
 
 get_latest_tag() {
     JSON=$(curl -s "https://registry.hub.docker.com/v2/repositories/$1/tags/")
